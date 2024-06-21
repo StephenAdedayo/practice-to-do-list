@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.to-do{
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 540px;
+    border-radius: 20px;
+    margin-top:-150px ;
+}
+
+.to-do h2{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: #002765;
+    margin-bottom: 20px;
+}
+
+.to-do h2 img{
+    width: 50px;
+    margin-left: 20px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+#input-box{
+    flex: 1;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #002765;
+    color: white;
+}
+
+ul{
+    margin-left: 20px;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    background-image: url(./images/unchecked.png);
+    height: 25px;
+    width: 25px;
+    top: 7px;
+    left: -10px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+ul li.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+
+ul li.checked::before{
+    background-image: url(./images/checked.png);
+}
+
+ li span{
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+li span:hover{
+    background: whitesmoke;
+}
