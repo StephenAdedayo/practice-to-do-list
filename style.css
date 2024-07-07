@@ -84,7 +84,7 @@ ul li{
 ul li::before{
     content: '';
     position: absolute;
-    background-image: url(./images/unchecked.png);
+    background-image:url(./images/unchecked.png) ;
     height: 25px;
     width: 25px;
     top: 7px;
@@ -119,3 +119,14 @@ ul li.checked::before{
 li span:hover{
     background: whitesmoke;
 }
+
+/* li button{
+   position: absolute;
+   top: 0;
+   right: 20px;
+   
+} */
+
+ 
+
+
